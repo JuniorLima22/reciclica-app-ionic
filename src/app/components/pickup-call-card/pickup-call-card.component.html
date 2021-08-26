@@ -30,8 +30,6 @@
       <ion-label color="success">{{value}}</ion-label>
     </ion-item>
 
-    <ion-button *ngIf="hasFooter" fill="clear" size="full" color="success">
-      See all...
-    </ion-button>
+    <ng-content select="[buttonSeeAll]"></ng-content>
   </ion-card-content>
 </ion-card>
